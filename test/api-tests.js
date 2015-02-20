@@ -805,7 +805,7 @@ QUnit.test('setRules applies rules to all properties', function(assert) {
 	]);
 
 	assert.deepEqual(target.child.property2.rules(), [
-        { rule: 'pattern', message: 'Only AlphaNumeric please', params: '^[a-z0-9].$', condition: undefined }
+        { rule: 'pattern', message: 'Only AlphaNumeric please', params: '^[a-z0-9].$', condition: undefined, throttle: undefined }
 	]);
 
 	assert.deepEqual(target.child.grandchild.property3.rules(), [
