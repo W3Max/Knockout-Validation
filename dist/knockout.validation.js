@@ -1399,7 +1399,7 @@ kv.validateObservable = function(observable) {
 
         if (ctx.throttle) {
             //We set isValidating to 1 to be able to differentiate the moment when the 
-            //validation is throttle of the actual validation (isValidating is set to true)
+            //validation is throttled of the actual validation (isValidating is set to true)
             observable.isValidating(1);
             delayValidation(rule, ctx, observable);
             return false;
